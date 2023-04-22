@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 public static class DbContextOptionsFactory
 {
-    private const string migrationProjctPrefix = "RentScooter.Context.Migrations";
+    private const string migrationProjectPrefix = "RentScooter.Context.Migrations";
 
     public static DbContextOptions<MainDbContext> Create(string connStr, DbType dbType)
     {
@@ -26,7 +26,7 @@ public static class DbContextOptionsFactory
                         opts => opts
                                 .CommandTimeout((int)TimeSpan.FromMinutes(10).TotalSeconds)
                                 .MigrationsHistoryTable("_EFMigrationsHistory", "public")
-                                .MigrationsAssembly($"{migrationProjctPrefix}{DbType.MSSQL}")
+                                .MigrationsAssembly($"{migrationProjectPrefix}{DbType.MSSQL}")
                         );
                     break;
 
@@ -35,7 +35,7 @@ public static class DbContextOptionsFactory
                         opts => opts
                                 .CommandTimeout((int)TimeSpan.FromMinutes(10).TotalSeconds)
                                 .MigrationsHistoryTable("_EFMigrationsHistory", "public")
-                                .MigrationsAssembly($"{migrationProjctPrefix}{DbType.PostgreSQL}")
+                                .MigrationsAssembly($"{migrationProjectPrefix}{DbType.PostgreSQL}")
                         );
                     break;
             }

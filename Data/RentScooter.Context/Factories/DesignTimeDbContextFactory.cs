@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 
 public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<MainDbContext>
 {
-    private const string migrationProjctPrefix = "RentScooter.Context.Migrations";
+    private const string migrationProjectPrefix = "RentScooter.Context.Migrations";
 
     public MainDbContext CreateDbContext(string[] args)
     {
@@ -24,7 +24,7 @@ public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<MainDbCont
                     .UseSqlServer(
                         configuration.GetConnectionString(provider),
                         opts => opts
-                            .MigrationsAssembly($"{migrationProjctPrefix}{DbType.MSSQL}")
+                            .MigrationsAssembly($"{migrationProjectPrefix}{DbType.MSSQL}")
                     )
                     .Options;
         }
@@ -35,7 +35,7 @@ public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<MainDbCont
                     .UseNpgsql(
                         configuration.GetConnectionString(provider),
                         opts => opts
-                            .MigrationsAssembly($"{migrationProjctPrefix}{DbType.PostgreSQL}")
+                            .MigrationsAssembly($"{migrationProjectPrefix}{DbType.PostgreSQL}")
                     )
                     .Options;
         }
