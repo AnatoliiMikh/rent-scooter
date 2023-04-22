@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\dsrcourse\\RentScooter\\Systems\\Api\\RentScooter.Api\\RentScooter.Api.csproj",
+      "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api\\RentScooter.Api.csproj",
       "projectName": "RentScooter.Api",
-      "projectPath": "F:\\dsrcourse\\RentScooter\\Systems\\Api\\RentScooter.Api\\RentScooter.Api.csproj",
+      "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api\\RentScooter.Api.csproj",
       "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
-      "outputPath": "F:\\dsrcourse\\RentScooter\\Systems\\Api\\RentScooter.Api\\obj\\",
+      "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",

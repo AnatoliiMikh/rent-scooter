@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ORi7GRuUoFradqVH+bW10OUGAmGPNeQrlBLozr9AVW8AgT4YgRXAEjSB5v18q69uFvqdANS3AJusUWTxSkUUsw==",
+  "dgSpecHash": "Apz9O8Wf8k8eq5SVNoAHtI4XbWBmuCLyJtAovmQwXFgQF00HxhSo94/rYljyW+6MgFltQOsd9GumBKLd5Uu+7g==",
   "success": true,
-  "projectFilePath": "F:\\dsrcourse\\RentScooter\\Systems\\Api\\RentScooter.Api\\RentScooter.Api.csproj",
+  "projectFilePath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api\\RentScooter.Api.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
