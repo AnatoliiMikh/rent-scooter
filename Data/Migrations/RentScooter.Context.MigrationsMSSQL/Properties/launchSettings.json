@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "DSRNetSchool.Context.MigrationsMSSQL": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:59443;http://localhost:59446"
+    }
+  }
+}
