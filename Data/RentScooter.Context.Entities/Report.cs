@@ -1,10 +1,14 @@
 ﻿namespace RentScooter.Context.Entities;
 
-public class Report 
+//using System.ComponentModel.DataAnnotations;
+
+public class Report : BaseEntity
 {
-    public int Id { get; set; }
-    public int PeriodId { get; set; }
+    //[Key]
+    //public int Id { get; set; }
+
+    public int RentalId { get; set; }
+    public virtual Rental Rental { get; set; }
     public decimal Income { get; set; }
 
-    public Period Period { get; set; }
 }
