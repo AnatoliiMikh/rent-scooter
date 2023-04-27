@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -8,10 +8,16 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Data\RentScooter.Context.Entities\RentScooter.Context.Entities.csproj" />
     <ProjectReference Include="..\..\Data\RentScooter.Context\RentScooter.Context.csproj" />
+    <ProjectReference Include="..\..\Shared\RentScooter.Common\RentScooter.Common.csproj" />
+    <ProjectReference Include="..\RentScooter.Services.Cache\RentScooter.Services.Cache.csproj" />
   </ItemGroup>
 
 </Project>

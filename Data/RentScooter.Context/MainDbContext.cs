@@ -30,11 +30,13 @@ namespace RentScooter.Context
             modelBuilder.Entity<Scooter>().Property(x => x.Name).IsRequired();
             modelBuilder.Entity<Scooter>().Property(x => x.Name).HasMaxLength(50);
             modelBuilder.Entity<Scooter>().HasIndex(x => x.Name).IsUnique();
+            //modelBuilder.Entity<Scooter>().HasMany(x => x.Rentals).WithOne(x => x.Scooter).HasForeignKey(x => x.RentalId).OnDelete(DeleteBehavior.Restrict);
 
             //modelBuilder.Entity<ScooterDetail>().ToTable("scooter_details");
             //modelBuilder.Entity<ScooterDetail>().HasOne(x => x.Scooter).WithOne(x => x.Detail).HasPrincipalKey<ScooterDetail>(x => x.Id);
 
             modelBuilder.Entity<Rental>().ToTable("rental");
+            //modelBuilder.Entity<Rental>().HasOne(x => x.Scooter).WithMany(x => x.Rentals).HasPrincipalKey<Rental>(x => x.Id);
             modelBuilder.Entity<Rental>().HasOne(x => x.Scooter).WithMany(x => x.Rentals).HasForeignKey(x => x.ScooterId).OnDelete(DeleteBehavior.Restrict);
 
             //modelBuilder.Entity<Report>().HasOne(x => x.Period).WithOne(x => x.Report).HasForeignKey<Report>(x => x.PeriodId);
@@ -67,7 +69,7 @@ namespace RentScooter.Context
             //    .WithMany(s => s.Rentals)
             //    .HasForeignKey(r => r.ScooterId)
             //    .OnDelete(DeleteBehavior.Restrict); //У каждой аренды есть задействованый самокат,
-                                                    //и только один притом у каждого самоката может быть много аренд а может и не быть - связь 1:n
+            //и только один притом у каждого самоката может быть много аренд а может и не быть - связь 1:n
 
 
         }

@@ -5,5 +5,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\RentScooter.Consts\RentScooter.Consts.csproj" />
+    <ProjectReference Include="..\RentScooter.Services.EmailSender\RentScooter.Services.EmailSender.csproj" />
+    <ProjectReference Include="..\RentScooter.Services.RabbitMq\RentScooter.Services.RabbitMq.csproj" />
+  </ItemGroup>
 
 </Project>
