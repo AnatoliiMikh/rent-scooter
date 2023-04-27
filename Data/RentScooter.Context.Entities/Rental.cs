@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿//using System.ComponentModel.DataAnnotations;
 
 namespace RentScooter.Context.Entities;
 public class Rental : BaseEntity
@@ -13,7 +13,7 @@ public class Rental : BaseEntity
     public DateTime StartDate { get; set; } //Дата начала аренды
     public DateTime EndDate { get; set; } //Дата конца аренды
 
-    public virtual Report Report { get; set; }
+    //public virtual Report Report { get; set; }
 
     //public virtual ICollection<Report> Report { get; set; } //У аренды может быть только один отчет, а может и не быть,
                                                             //У каждого отчета обязательно должен быть запись аренды,

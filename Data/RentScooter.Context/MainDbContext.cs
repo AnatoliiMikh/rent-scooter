@@ -10,7 +10,7 @@ namespace RentScooter.Context
         public DbSet<Scooter> Scooters { get; set; }
         public DbSet<Rental> Rentals { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<Report> Reports { get; set; }
+        //public DbSet<Report> Reports { get; set; }
 
         public MainDbContext(DbContextOptions<MainDbContext> options) : base(options) { }
 
@@ -37,21 +37,22 @@ namespace RentScooter.Context
             modelBuilder.Entity<Rental>().ToTable("rental");
             modelBuilder.Entity<Rental>().HasOne(x => x.Scooter).WithMany(x => x.Rentals).HasForeignKey(x => x.ScooterId).OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<Report>().HasOne(x => x.Period).WithOne(x => x.Report).HasForeignKey<Report>(x => x.PeriodId);
+            //modelBuilder.Entity<Report>().HasOne(x => x.Period).WithOne(x => x.Report).HasForeignKey<Report>(x => x.PeriodId);
+            //modelBuilder.Entity<Revenue>().HasOne(x => x.Rental).WithOne(x => x.Report).HasForeignKey<Report>(x => x.PeriodId);
 
 
-            modelBuilder.Entity<Scooter>()
-                .HasKey(s => s.Id);
+            //modelBuilder.Entity<Scooter>()
+            //    .HasKey(s => s.Id);
 
-            modelBuilder.Entity<Rental>()
-                .HasKey(r => r.Id);
+            //modelBuilder.Entity<Rental>()
+            //    .HasKey(r => r.Id);
 
 
-            modelBuilder.Entity<User>()
-                .HasKey(u => u.Id);
+            //modelBuilder.Entity<User>()
+            //    .HasKey(u => u.Id);
 
-            modelBuilder.Entity<Report>()
-                .HasKey(r => r.Id);
+            //modelBuilder.Entity<Report>()
+            //    .HasKey(r => r.Id);
 
 
 
