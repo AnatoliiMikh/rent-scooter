@@ -4,14 +4,14 @@
     "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api\\RentScooter.Api.csproj": {}
   },
   "projects": {
-    "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api\\RentScooter.Api.csproj": {
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\Migrations\\RentScooter.Context.MigrationsMSSQL\\RentScooter.Context.MigrationsMSSQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api\\RentScooter.Api.csproj",
-        "projectName": "RentScooter.Api",
-        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api\\RentScooter.Api.csproj",
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\Migrations\\RentScooter.Context.MigrationsMSSQL\\RentScooter.Context.MigrationsMSSQL.csproj",
+        "projectName": "RentScooter.Context.MigrationsMSSQL",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\Migrations\\RentScooter.Context.MigrationsMSSQL\\RentScooter.Context.MigrationsMSSQL.csproj",
         "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
-        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api\\obj\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\Migrations\\RentScooter.Context.MigrationsMSSQL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
@@ -44,6 +44,1222 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\Migrations\\RentScooter.Context.MigrationsPostgreSQL\\RentScooter.Context.MigrationsPostgreSQL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\Migrations\\RentScooter.Context.MigrationsPostgreSQL\\RentScooter.Context.MigrationsPostgreSQL.csproj",
+        "projectName": "RentScooter.Context.MigrationsPostgreSQL",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\Migrations\\RentScooter.Context.MigrationsPostgreSQL\\RentScooter.Context.MigrationsPostgreSQL.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\Migrations\\RentScooter.Context.MigrationsPostgreSQL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context.Entities\\RentScooter.Context.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context.Entities\\RentScooter.Context.Entities.csproj",
+        "projectName": "RentScooter.Context.Entities",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context.Entities\\RentScooter.Context.Entities.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context\\RentScooter.Context.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context\\RentScooter.Context.csproj",
+        "projectName": "RentScooter.Context",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context\\RentScooter.Context.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context.Entities\\RentScooter.Context.Entities.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context.Entities\\RentScooter.Context.Entities.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Actions\\RentScooter.Services.Actions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Actions\\RentScooter.Services.Actions.csproj",
+        "projectName": "RentScooter.Services.Actions",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Actions\\RentScooter.Services.Actions.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Actions\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.EmailSender\\RentScooter.Services.EmailSender.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.EmailSender\\RentScooter.Services.EmailSender.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.RabbitMq\\RentScooter.Services.RabbitMq.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.RabbitMq\\RentScooter.Services.RabbitMq.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Consts\\RentScooter.Consts.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Consts\\RentScooter.Consts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Cache\\RentScooter.Services.Cache.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Cache\\RentScooter.Services.Cache.csproj",
+        "projectName": "RentScooter.Services.Cache",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Cache\\RentScooter.Services.Cache.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Cache\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Common\\RentScooter.Common.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Common\\RentScooter.Common.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.104, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.EmailSender\\RentScooter.Services.EmailSender.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.EmailSender\\RentScooter.Services.EmailSender.csproj",
+        "projectName": "RentScooter.Services.EmailSender",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.EmailSender\\RentScooter.Services.EmailSender.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.EmailSender\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.RabbitMq\\RentScooter.Services.RabbitMq.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.RabbitMq\\RentScooter.Services.RabbitMq.csproj",
+        "projectName": "RentScooter.Services.RabbitMq",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.RabbitMq\\RentScooter.Services.RabbitMq.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.RabbitMq\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Scooters\\RentScooter.Services.Scooters.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Scooters\\RentScooter.Services.Scooters.csproj",
+        "projectName": "RentScooter.Services.Scooters",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Scooters\\RentScooter.Services.Scooters.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Scooters\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context.Entities\\RentScooter.Context.Entities.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context.Entities\\RentScooter.Context.Entities.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context\\RentScooter.Context.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context\\RentScooter.Context.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Cache\\RentScooter.Services.Cache.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Cache\\RentScooter.Services.Cache.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Common\\RentScooter.Common.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Common\\RentScooter.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Settings\\RentScooter.Services.Settings.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Settings\\RentScooter.Services.Settings.csproj",
+        "projectName": "RentScooter.Services.Settings",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Settings\\RentScooter.Services.Settings.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Settings\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.UserAccount\\RentScooter.Services.UserAccount.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.UserAccount\\RentScooter.Services.UserAccount.csproj",
+        "projectName": "RentScooter.Services.UserAccount",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.UserAccount\\RentScooter.Services.UserAccount.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.UserAccount\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context.Entities\\RentScooter.Context.Entities.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context.Entities\\RentScooter.Context.Entities.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Actions\\RentScooter.Services.Actions.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Actions\\RentScooter.Services.Actions.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Common\\RentScooter.Common.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Common\\RentScooter.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Common\\RentScooter.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Common\\RentScooter.Common.csproj",
+        "projectName": "RentScooter.Common",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Common\\RentScooter.Common.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Consts\\RentScooter.Consts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Consts\\RentScooter.Consts.csproj",
+        "projectName": "RentScooter.Consts",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Consts\\RentScooter.Consts.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Consts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj",
+        "projectName": "RentScooter.Settings",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api.Settings\\RentScooter.Api.Settings.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api.Settings\\RentScooter.Api.Settings.csproj",
+        "projectName": "RentScooter.Api.Settings",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api.Settings\\RentScooter.Api.Settings.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api.Settings\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api\\RentScooter.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api\\RentScooter.Api.csproj",
+        "projectName": "RentScooter.Api",
+        "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api\\RentScooter.Api.csproj",
+        "packagesPath": "C:\\Users\\TBOTB\\.nuget\\packages\\",
+        "outputPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "P:\\Programs\\Visual Studio\\Other\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\TBOTB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\Migrations\\RentScooter.Context.MigrationsMSSQL\\RentScooter.Context.MigrationsMSSQL.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\Migrations\\RentScooter.Context.MigrationsMSSQL\\RentScooter.Context.MigrationsMSSQL.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\Migrations\\RentScooter.Context.MigrationsPostgreSQL\\RentScooter.Context.MigrationsPostgreSQL.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\Migrations\\RentScooter.Context.MigrationsPostgreSQL\\RentScooter.Context.MigrationsPostgreSQL.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context\\RentScooter.Context.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context\\RentScooter.Context.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Actions\\RentScooter.Services.Actions.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Actions\\RentScooter.Services.Actions.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Cache\\RentScooter.Services.Cache.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Cache\\RentScooter.Services.Cache.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.RabbitMq\\RentScooter.Services.RabbitMq.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.RabbitMq\\RentScooter.Services.RabbitMq.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Scooters\\RentScooter.Services.Scooters.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Scooters\\RentScooter.Services.Scooters.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Settings\\RentScooter.Services.Settings.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Settings\\RentScooter.Services.Settings.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.UserAccount\\RentScooter.Services.UserAccount.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.UserAccount\\RentScooter.Services.UserAccount.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Common\\RentScooter.Common.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Common\\RentScooter.Common.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Settings\\RentScooter.Settings.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api.Settings\\RentScooter.Api.Settings.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Systems\\Api\\RentScooter.Api.Settings\\RentScooter.Api.Settings.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "IdentityServer4.AccessTokenValidation": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.18.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Serilog.Enrichers.CorrelationId": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Expressions": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[7.0.6, )"
+            },
+            "Swashbuckle.AspNetCore.Newtonsoft": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

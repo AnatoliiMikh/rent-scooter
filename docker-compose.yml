@@ -1,0 +1,64 @@
+version: '3.4'
+
+services:
+
+  rentscooter_postgresql:
+    image: postgres:14.1
+    
+  rentscooter_redis:
+    image: redis
+
+  rentscooter_rabbitmq:
+    image: rabbitmq:management
+
+  rentscooter_api:
+    image: ${DOCKER_REGISTRY-}rentscooterapi
+    build:
+      context: .
+      dockerfile: Systems/Api/RentScooter.Api/Dockerfile
+    depends_on:
+      - rentscooter_postgresql
+      - rentscooter_redis
+
+  rentscooter_identity:
+    image: ${DOCKER_REGISTRY-}rentscooteridentity
+    build:
+      context: .
+      dockerfile: Systems/Identity/RentScooter.Identity/Dockerfile
+    depends_on:
+      - rentscooter_postgresql
+      - rentscooter_redis
+      - rentscooter_api
+
+  rentscooter_worker_1:
+    image: ${DOCKER_REGISTRY-}rentscooterworker
+    build:
+      context: .
+      dockerfile: Systems/Workers/RentScooter.Worker/Dockerfile
+    depends_on:
+      - rentscooter_postgresql
+      - rentscooter_redis
+      - rentscooter_rabbitmq
+      - rentscooter_api
+  
+  rentscooter_worker_2:
+    image: ${DOCKER_REGISTRY-}rentscooterworker
+    build:
+      context: .
+      dockerfile: Systems/Workers/RentScooter.Worker/Dockerfile
+    depends_on:
+      - rentscooter_postgresql
+      - rentscooter_redis
+      - rentscooter_rabbitmq
+      - rentscooter_api
+
+  rentscooter_web:
+    image: ${DOCKER_REGISTRY-}rentscooterweb
+    build:
+      context: .
+      dockerfile: Systems/Web/RentScooter.Web/Dockerfile
+    depends_on:
+      - rentscooter_postgresql
+      - rentscooter_redis
+      - rentscooter_rabbitmq
+      - rentscooter_api

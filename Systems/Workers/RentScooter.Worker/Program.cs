@@ -1,32 +1,39 @@
+using RentScooter.Context;
+//using DSRNetSchool.Settings;
+using RentScooter.Worker;
+using RentScooter.Worker.Configuration;
+using Serilog;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-var app = builder.Build();
+builder.AddAppLogger();
+
+// Configure services
+var services = builder.Services;
+
+services.AddHttpContextAccessor();
+
+services.AddAppDbContext(builder.Configuration);
+
+services.AddAppHealthChecks();
+
+services.RegisterAppServices();
+
 
 // Configure the HTTP request pipeline.
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+var app = builder.Build();
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-});
+app.UseAppHealthChecks();
+
+
+// Start task executor
+
+app.Services.GetRequiredService<ITaskExecutor>().Start();
+
+
+// Run app
 
 app.Run();
-
-internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
