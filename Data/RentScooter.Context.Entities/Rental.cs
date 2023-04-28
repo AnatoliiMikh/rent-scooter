@@ -13,11 +13,15 @@ public class Rental : BaseEntity
     public DateTime StartDate { get; set; } //Дата начала аренды
     public DateTime EndDate { get; set; } //Дата конца аренды
 
-    //public virtual Report Report { get; set; }
+    public decimal Income { get; set; }
 
-    //public virtual ICollection<Report> Report { get; set; } //У аренды может быть только один отчет, а может и не быть,
-                                                            //У каждого отчета обязательно должен быть запись аренды,
-                                                            //связь 1:1
+
+    //public virtual  Report { get; set; }
+
+   //public virtual ICollection<Scooter> Scooter { get; set; } 
+    //У аренды может быть только один отчет, а может и не быть,
+    //У каждого отчета обязательно должен быть запись аренды,
+    //связь 1:1
 
     //public int Id { get; set; }
     //public int UserId { get; set; }

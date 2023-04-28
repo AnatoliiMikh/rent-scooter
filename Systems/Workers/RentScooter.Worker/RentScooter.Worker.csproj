@@ -4,6 +4,29 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+    <PackageReference Include="Serilog.Enrichers.CorrelationId" Version="3.0.1" />
+    <PackageReference Include="Serilog.Expressions" Version="3.4.1" />
+  </ItemGroup>	
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Data\RentScooter.Context\RentScooter.Context.csproj" />
+    <ProjectReference Include="..\..\..\Services\RentScooter.Services.Actions\RentScooter.Services.Actions.csproj" />
+    <ProjectReference Include="..\..\..\Services\RentScooter.Services.EmailSender\RentScooter.Services.EmailSender.csproj" />
+    <ProjectReference Include="..\..\..\Services\RentScooter.Services.RabbitMq\RentScooter.Services.RabbitMq.csproj" />
+    <ProjectReference Include="..\..\..\Shared\RentScooter.Common\RentScooter.Common.csproj" />
+    <ProjectReference Include="..\..\..\Shared\RentScooter.Consts\RentScooter.Consts.csproj" />
+    <ProjectReference Include="..\..\..\Shared\RentScooter.Settings\RentScooter.Settings.csproj" />
+  </ItemGroup>
 
 </Project>

@@ -1,0 +1,139 @@
+﻿@page "/scooters"
+
+@layout MainLayout
+
+@inject ISnackbar Snackbar
+@inject IDialogService DialogService
+@inject IScooterService scooterService
+@inject NavigationManager navigationManager
+
+<MudText Typo="Typo.h4" Class="ma-8">Books</MudText>
+
+<MudTable Items="@ScooterListItems" Class="ma-8" Dense="@dense" Hover="@hover" Bordered="@bordered" Striped="@striped" Filter="new Func<ScooterListItem,bool>(FilterFuncSimple)">
+    <ColGroup>
+        <col style="width:50px;" />
+        <col />
+        <col />
+        <col />
+        <col style="width:100px;" />
+    </ColGroup>
+    <ToolBarContent>
+        <MudButton StartIcon="@Icons.Material.Filled.Add" Variant="Variant.Filled" Color="Color.Primary" OnClick="@((e) => AddScooter())">Add</MudButton>
+        <MudSpacer />
+        //<MudTextField @bind-Value="searchString" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium"></MudTextField>
+    </ToolBarContent>
+    <HeaderContent>
+        <MudTh>Id</MudTh>
+        <MudTh>Title</MudTh>
+        <MudTh>Author</MudTh>
+        <MudTh>Description</MudTh>
+        <MudTh></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Id">@context.Id</MudTd>
+        <MudTd DataLabel="Title">@context.Title</MudTd>
+        <MudTd DataLabel="Author">@context.Author</MudTd>
+        <MudTd DataLabel="Description">@context.Description</MudTd>
+        <MudTd>
+            <MudIconButton Icon="@Icons.Material.Filled.Edit" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" OnClick="@((e) => EditBook(context.Id))" />
+            <MudIconButton Icon="@Icons.Material.Filled.Delete" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" OnClick="@((e) => DeleteBook(context.Id))" />
+        </MudTd>
+    </RowTemplate>
+    <PagerContent>
+        <MudTablePager />
+    </PagerContent>
+</MudTable>
+
+
+@code {
+    private bool dense = false;
+    private bool hover = true;
+    private bool striped = true;
+    private bool bordered = false;
+
+    private string searchString = "";
+
+    private IEnumerable<ScooterListItem> ScooterListItems = new List<ScooterListItem>();
+
+    private async Task ReloadData()
+    {
+        ScooterListItems = await scooterService.GetScooters(0, 10000);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            await ReloadData();
+        }
+        catch (Exception ex)
+        {
+            Snackbar.Add(ex.Message, Severity.Error);
+        }
+    }
+
+    private bool FilterFuncSimple(ScooterListItem ScooterListItem) => FilterFunc(ScooterListItem, searchString);
+
+    private bool FilterFunc(ScooterListItem ScooterListItem, string searchString)
+    {
+        return
+            string.IsNullOrWhiteSpace(searchString)
+            ||
+            ScooterListItem.Title.Contains(searchString, StringComparison.OrdinalIgnoreCase)
+            ||
+            ScooterListItem.Author.Contains(searchString, StringComparison.OrdinalIgnoreCase)
+            ||
+            ScooterListItem.Description.Contains(searchString)
+        ;
+    }
+
+    private async Task AddScooter()
+    {
+        var parameters = new DialogParameters { };
+        var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Large, FullWidth = true };
+
+        var dialog = DialogService.Show<ScooterDialog>("Add Scooter", parameters, options);
+        var result = await dialog.Result;
+
+        if (!result.Cancelled)
+        {
+            await scooterService.AddScooter(((ScooterDialog)dialog.Dialog).model);
+            await ReloadData();
+        }
+    }
+
+    private async Task EditScooter(int scooterId)
+    {
+        var parameters = new DialogParameters();
+        parameters.Add("ScooterId", scooterId);
+
+        var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Large, FullWidth = true };
+        var dialog = DialogService.Show<BookDialog>("Edit scooter", parameters, options);
+        var result = await dialog.Result;
+
+        if (!result.Cancelled)
+        {
+            await scooterService.EditScooter(scooterId, ((ScooterDialog)dialog.Dialog).model);
+            await ReloadData();
+        }
+    }
+
+    private async Task DeleteScooter(int scooterId)
+    {
+        var parameters = new DialogParameters();
+        parameters.Add("ContentText", "Do you really want to delete this scooter? This process cannot be undone.");
+        parameters.Add("ButtonText", "Delete");
+        parameters.Add("Color", Color.Error);
+
+        var options = new DialogOptions() { CloseButton = true, MaxWidth = MaxWidth.ExtraSmall };
+
+        var dialog = DialogService.Show<ConfirmationDialog>("Delete scooter", parameters, options);
+        var result = await dialog.Result;
+
+        if (!result.Cancelled)
+        {
+            await scooterService.DeleteScooter(scooterId);
+            await ReloadData();
+        }
+    }
+}

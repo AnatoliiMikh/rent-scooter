@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\RentScooter.Context.Entities\RentScooter.Context.Entities.csproj" />
+    <ProjectReference Include="..\..\Shared\RentScooter.Common\RentScooter.Common.csproj" />
+    <ProjectReference Include="..\RentScooter.Services.Actions\RentScooter.Services.Actions.csproj" />
+  </ItemGroup>
+	
 </Project>
