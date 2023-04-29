@@ -18,7 +18,7 @@ using Microsoft.AspNetCore.Mvc;
 /// <response code="404">Not Found</response>
 [ProducesResponseType(typeof(ErrorResponse), 400)]
 [Produces("application/json")]
-[Route("api/v{version:apiVersion}/books")]
+[Route("api/v{version:apiVersion}/scooters")]
 [Authorize]
 [ApiController]
 [ApiVersion("1.0")]
