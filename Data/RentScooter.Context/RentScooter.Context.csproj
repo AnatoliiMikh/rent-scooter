@@ -22,4 +22,7 @@
     <ProjectReference Include="..\RentScooter.Context.Entities\RentScooter.Context.Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Settings\" />
+  </ItemGroup>
 </Project>

@@ -2,7 +2,6 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using RentScooter.Context;
 
 public static class DbSeeder
 {
@@ -10,8 +9,8 @@ public static class DbSeeder
     private static MainDbContext DbContext(IServiceProvider serviceProvider) => ServiceScope(serviceProvider).ServiceProvider.GetRequiredService<IDbContextFactory<MainDbContext>>().CreateDbContext();
 
     //private static readonly string masterUserName = "Admin";
-    //private static readonly string masterUserEmail = "admin@dsrnetscool.com";
-    //private static readonly string masterUserPassword = "Pass123#";
+    //private static readonly string masterUserEmail = "admin@rentscooter.com";
+    //private static readonly string masterUserPassword = "123";
 
     //private static void ConfigureAdministrator(IServiceScope scope)
     //{
