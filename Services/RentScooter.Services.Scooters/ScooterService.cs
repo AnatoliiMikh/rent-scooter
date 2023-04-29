@@ -14,7 +14,7 @@ public class ScooterService : IScooterService
 
     private readonly IDbContextFactory<MainDbContext> contextFactory;
     private readonly IMapper mapper;
-    private readonly ICacheService cacheService; 
+    private readonly ICacheService cacheService;
     private readonly IModelValidator<AddScooterModel> addScooterModelValidator;
     private readonly IModelValidator<UpdateScooterModel> updateScooterModelValidator;
 
@@ -30,7 +30,7 @@ public class ScooterService : IScooterService
         this.mapper = mapper;
         this.cacheService = cacheService;
         this.addScooterModelValidator = addScooterModelValidator;
-        this.addScooterModelValidator = addScooterModelValidator;
+        this.updateScooterModelValidator = updateScooterModelValidator;
     }
 
     public async Task<IEnumerable<ScooterModel>> GetScooters(int offset = 0, int limit = 10)
@@ -55,6 +55,7 @@ public class ScooterService : IScooterService
 
         var scooters = context
             .Scooters
+            .Include(x => x.Brand)
             .AsQueryable();
 
         scooters = scooters
@@ -72,7 +73,7 @@ public class ScooterService : IScooterService
     {
         using var context = await contextFactory.CreateDbContextAsync();
 
-        var scooter = await context.Scooters.Include(x => x.Rentals).FirstOrDefaultAsync(x => x.Id.Equals(id));
+        var scooter = await context.Scooters.Include(x => x.Brand).FirstOrDefaultAsync(x => x.Id.Equals(id));
 
         var data = mapper.Map<ScooterModel>(scooter);
 
@@ -89,7 +90,7 @@ public class ScooterService : IScooterService
         context.SaveChanges();
 
 
-        await cacheService.Delete(contextCacheKey);
+        await cacheService.Delete(contextCacheKey); //удаляем кэш после добавления нового самоката
 
         return mapper.Map<ScooterModel>(scooter);
     }
