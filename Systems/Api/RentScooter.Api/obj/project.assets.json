@@ -2598,6 +2598,20 @@
           "bin/placeholder/RentScooter.Services.Actions.dll": {}
         }
       },
+      "RentScooter.Services.Brands/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "RentScooter.Context": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RentScooter.Services.Brands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RentScooter.Services.Brands.dll": {}
+        }
+      },
       "RentScooter.Services.Cache/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -6847,6 +6861,11 @@
       "path": "../../../Services/RentScooter.Services.Actions/RentScooter.Services.Actions.csproj",
       "msbuildProject": "../../../Services/RentScooter.Services.Actions/RentScooter.Services.Actions.csproj"
     },
+    "RentScooter.Services.Brands/1.0.0": {
+      "type": "project",
+      "path": "../../../Services/RentScooter.Services.Brands/RentScooter.Services.Brands.csproj",
+      "msbuildProject": "../../../Services/RentScooter.Services.Brands/RentScooter.Services.Brands.csproj"
+    },
     "RentScooter.Services.Cache/1.0.0": {
       "type": "project",
       "path": "../../../Services/RentScooter.Services.Cache/RentScooter.Services.Cache.csproj",
@@ -6897,6 +6916,7 @@
       "RentScooter.Context.MigrationsMSSQL >= 1.0.0",
       "RentScooter.Context.MigrationsPostgreSQL >= 1.0.0",
       "RentScooter.Services.Actions >= 1.0.0",
+      "RentScooter.Services.Brands >= 1.0.0",
       "RentScooter.Services.Cache >= 1.0.0",
       "RentScooter.Services.RabbitMq >= 1.0.0",
       "RentScooter.Services.Scooters >= 1.0.0",
@@ -6957,6 +6977,9 @@
             },
             "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Actions\\RentScooter.Services.Actions.csproj": {
               "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Actions\\RentScooter.Services.Actions.csproj"
+            },
+            "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Brands\\RentScooter.Services.Brands.csproj": {
+              "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Brands\\RentScooter.Services.Brands.csproj"
             },
             "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Cache\\RentScooter.Services.Cache.csproj": {
               "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Cache\\RentScooter.Services.Cache.csproj"
