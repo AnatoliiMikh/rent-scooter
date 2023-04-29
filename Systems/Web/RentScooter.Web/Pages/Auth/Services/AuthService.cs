@@ -1,4 +1,4 @@
-﻿namespace DSRNetSchool.Web;
+﻿namespace RentScooter.Web;
 
 using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components.Authorization;

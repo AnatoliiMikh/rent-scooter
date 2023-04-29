@@ -4,24 +4,26 @@ using FluentValidation;
 
 public class ScooterModel
 {
-    public int Id { get; set; }
-    public string Name { get; set; } = string.Empty;
-    public bool IsInUse { get; set; } = false;
-    public decimal PricePerMinute { get; set; } = Decimal.Zero;
+    public int? Id { get; set; }
+    public int BrandId { get; set; }
+    public string Title { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
 }
 
 public class ScooterModelValidator : AbstractValidator<ScooterModel>
 {
     public ScooterModelValidator()
     {
-        RuleFor(x => x.Name)
-           .NotEmpty().WithMessage("Name is required.");
+        RuleFor(v => v.Title)
+              .NotEmpty().WithMessage("Title is required")
+              .MaximumLength(256).WithMessage("Title length must be less then 256")
+              ;
 
-        RuleFor(x => x.IsInUse)
-            .NotEmpty().WithMessage("Status is required.");
+        RuleFor(v => v.BrandId)
+            .GreaterThan(0).WithMessage("Please, select an brand");
 
-        RuleFor(x => x.PricePerMinute)
-            .NotEmpty().WithMessage("Price is required.");
+        RuleFor(v => v.Description)
+             .MaximumLength(1024).WithMessage("Description length must be less then 1024");
     }
 
     public Func<object, string, Task<IEnumerable<string>>> ValidateValue => async (model, propertyName) =>

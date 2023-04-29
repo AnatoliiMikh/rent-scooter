@@ -6,20 +6,20 @@
     <DialogContent>
         <MudForm Model="model" @ref="form" Validation="@(modelValidator.ValidateValue)">
             <MudGrid>
-@*                <MudItem xs="12" sm="6">
+                <MudItem xs="12" sm="6">
                     <MudTextField Label="Title" @bind-Value="model.Title"
                                   For="@(() => model.Title)"
                                   Required="true"
                                   RequiredError="Title is required!"
                                   >
                     </MudTextField>
-*@@*                </MudItem>
+                </MudItem>
                 <MudItem xs="12" sm="6">
-                    <MudSelect @ref="selectAuthor" T="int" Label="Author" @bind-Value="model.AuthorId" For="@(() => model.AuthorId)">
+                    <MudSelect @ref="selectBrand" T="int" Label="Brand" @bind-Value="model.BrandId" For="@(() => model.BrandId)">
                         <MudSelectItem T="int" Value="0">&nbsp;</MudSelectItem>
-                        @foreach (var author in _authors)
+                        @foreach (var brand in _brands)
                         {
-                            <MudSelectItem T="int" Value="@author.Id">@author.Name</MudSelectItem>
+                            <MudSelectItem T="int" Value="@brand.Id">@brand.Name</MudSelectItem>
                         }
                     </MudSelect>
                 </MudItem>
@@ -29,7 +29,7 @@
                                   For="@(() => model.Description)"
                                   @bind-Value="model.Description"></MudTextField>
                 </MudItem>
-*@            </MudGrid>
+            </MudGrid>
         </MudForm>
     </DialogContent>
     <DialogActions>
@@ -43,37 +43,37 @@
     MudDialogInstance MudDialog { get; set; } = default!;
 
     MudForm form = default!;
-    MudSelect<int> selectAuthor = default!;
+    MudSelect<int> selectBrand = default!;
 
-    BookModelValidator modelValidator = new BookModelValidator();
+    ScooterModelValidator modelValidator = new ScooterModelValidator();
 
     bool isNew = false;
 
     [Parameter]
-    public int? BookId { get; set; } = default;
+    public int? ScooterId { get; set; } = default;
 
     [Parameter]
-    public BookModel model { get; set; } = new() { AuthorId = 0 };
+    public ScooterModel model { get; set; } = new() { BrandId = 0 };
 
-    private List<AuthorModel> _authors { get; set; } = new List<AuthorModel>();
+    private List<BrandModel> _brands { get; set; } = new List<BrandModel>();
 
     protected override async Task OnInitializedAsync()
     {
-        var data = await bookService.GetAuthorList();
-        _authors.AddRange(data);
+        var data = await scooterService.GetBrandList();
+        _brands.AddRange(data);
 
-        isNew = BookId == null;
+        isNew = ScooterId == null;
         if (!isNew)
         {
-            var book = await bookService.GetBook(BookId ?? 0);
+            var scooter = await scooterService.GetScooter(ScooterId ?? 0);
 
-            model.Id = book.Id;
-            model.AuthorId = book.AuthorId;
-            model.Title = book.Title;
-            model.Description = book.Description;
+            model.Id = scooter.Id;
+            model.BrandId = scooter.BrandId;
+            model.Title = scooter.Title;
+            model.Description = scooter.Description;
         }
 
-        await selectAuthor.SelectOption(model.AuthorId);
+        await selectBrand.SelectOption(model.BrandId);
         form.ResetValidation();
     }
 

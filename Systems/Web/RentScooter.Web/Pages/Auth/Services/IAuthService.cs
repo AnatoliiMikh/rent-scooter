@@ -1,4 +1,4 @@
-﻿namespace DSRNetSchool.Web;
+﻿namespace RentScooter.Web;
 
 using System.Threading.Tasks;
 

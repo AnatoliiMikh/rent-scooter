@@ -89,9 +89,14 @@
             Scooter Id
             </summary>
         </member>
-        <member name="P:RentScooter.API.Controllers.Models.ScooterResponse.Name">
+        <member name="P:RentScooter.API.Controllers.Models.ScooterResponse.Title">
             <summary>
-            Scooter name
+            Scooter title
+            </summary>
+        </member>
+        <member name="M:RentScooter.API.Controllers.Brands.BrandsController.GetBrands">
+            <summary>
+            Get brands
             </summary>
         </member>
         <member name="T:RentScooter.API.Controllers.ScooterController">

@@ -83,7 +83,7 @@ public class ScooterService : IScooterService
 
     public async Task DeleteScooter(int scooterId)
     {
-        string url = $"{Settings.ApiRoot}/v1/scooters/{scooterId}";
+        string url = $"{Settings.ApiRoot}/v1/scooters/ {scooterId}";
 
         var response = await _httpClient.DeleteAsync(url);
         var content = await response.Content.ReadAsStringAsync();
@@ -94,20 +94,20 @@ public class ScooterService : IScooterService
         }
     }
 
-    //public async Task<IEnumerable<AuthorModel>> GetAuthorList()
-    //{
-    //    string url = $"{Settings.ApiRoot}/v1/authors";
+    public async Task<IEnumerable<BrandModel>> GetBrandList()
+    {
+        string url = $"{Settings.ApiRoot}/v1/brands";
 
-    //    var response = await _httpClient.GetAsync(url);
-    //    var content = await response.Content.ReadAsStringAsync();
+        var response = await _httpClient.GetAsync(url);
+        var content = await response.Content.ReadAsStringAsync();
 
-    //    if (!response.IsSuccessStatusCode)
-    //    {
-    //        throw new Exception(content);
-    //    }
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(content);
+        }
 
-    //    var data = JsonSerializer.Deserialize<IEnumerable<AuthorModel>>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new List<AuthorModel>();
+        var data = JsonSerializer.Deserialize<IEnumerable<BrandModel>>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new List<BrandModel>();
 
-    //    return data;
-    //}
+        return data;
+    }
 }

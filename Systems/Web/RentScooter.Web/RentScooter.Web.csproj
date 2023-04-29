@@ -2,9 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\Books\**" />
+    <Content Remove="Pages\Books\**" />
+    <EmbeddedResource Remove="Pages\Books\**" />
+    <None Remove="Pages\Books\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Blazored.LocalStorage" Version="4.3.0" />
@@ -17,10 +24,9 @@
 
   <ItemGroup>
     <Folder Include="Components\" />
+    <Folder Include="Pages\Rents\" />
     <Folder Include="Services\" />
     <Folder Include="Providers\" />
-    <Folder Include="Pages\Books\Models\" />
-    <Folder Include="Pages\Books\Services\" />
 	<Folder Include="Pages\Shared\" />
   </ItemGroup>
 
