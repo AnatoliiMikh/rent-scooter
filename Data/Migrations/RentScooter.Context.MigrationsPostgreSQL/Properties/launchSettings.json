@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "DSRNetSchool.Context.MigrationsPostgreSQL": {
+    "RentScooter.Context.MigrationsPostgreSQL": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

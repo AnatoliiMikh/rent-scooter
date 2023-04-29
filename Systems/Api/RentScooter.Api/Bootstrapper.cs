@@ -2,7 +2,7 @@
 
 using RentScooter.Api.Settings;
 using RentScooter.Services.Actions;
-//using RentScooter.Services.Authors;
+using RentScooter.Services.Brands;
 using RentScooter.Services.Scooters;
 using RentScooter.Services.Cache;
 using RentScooter.Services.RabbitMq;
@@ -24,7 +24,7 @@ public static class Bootstrapper
             .AddCache()
             .AddRabbitMq()
             .AddActions()
-            //.AddAuthorService()
+            .AddBrandService()
             ;
 
         return services;

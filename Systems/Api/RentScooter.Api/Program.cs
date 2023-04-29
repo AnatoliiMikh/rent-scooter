@@ -38,7 +38,7 @@ services.RegisterAppServices();
 
 var app = builder.Build();
 
-app.UseStaticFiles(); //Убрать, когда сделаем web
+app.UseStaticFiles(); //Убрать, когда сделаю web
 
 app.UseAppCors();
 

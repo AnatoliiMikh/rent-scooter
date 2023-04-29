@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "DSRNetSchool.Context.MigrationsMSSQL": {
+    "RentScooter.Context.MigrationsMSSQL": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
