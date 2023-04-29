@@ -7,13 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Pages\Books\**" />
-    <Content Remove="Pages\Books\**" />
-    <EmbeddedResource Remove="Pages\Books\**" />
-    <None Remove="Pages\Books\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Blazored.LocalStorage" Version="4.3.0" />
     <PackageReference Include="FluentValidation" Version="11.5.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.0" />
@@ -24,10 +17,11 @@
 
   <ItemGroup>
     <Folder Include="Components\" />
-    <Folder Include="Pages\Rents\" />
     <Folder Include="Services\" />
-    <Folder Include="Providers\" />
-	<Folder Include="Pages\Shared\" />
+	<Folder Include="Providers\" />
+    <Folder Include="Pages\Scooters\Models\" />
+    <Folder Include="Pages\Scooters\Services\" />
+    <Folder Include="Pages\Shared\" />
   </ItemGroup>
 
 </Project>

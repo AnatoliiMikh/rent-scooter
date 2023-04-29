@@ -32,7 +32,14 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context.Entities\\RentScooter.Context.Entities.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context.Entities\\RentScooter.Context.Entities.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context\\RentScooter.Context.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context\\RentScooter.Context.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -44,6 +51,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -92,7 +105,14 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context.Entities\\RentScooter.Context.Entities.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context.Entities\\RentScooter.Context.Entities.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context\\RentScooter.Context.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context\\RentScooter.Context.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -104,6 +124,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -242,10 +268,6 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Identity": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"

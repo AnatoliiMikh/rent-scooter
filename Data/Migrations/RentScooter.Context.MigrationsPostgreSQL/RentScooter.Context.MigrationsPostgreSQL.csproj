@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\RentScooter.Context.Entities\RentScooter.Context.Entities.csproj" />
+    <ProjectReference Include="..\..\RentScooter.Context\RentScooter.Context.csproj" />
+  </ItemGroup>
+
 </Project>
