@@ -9,8 +9,8 @@ public static class DbSeeder
     private static MainDbContext DbContext(IServiceProvider serviceProvider) => ServiceScope(serviceProvider).ServiceProvider.GetRequiredService<IDbContextFactory<MainDbContext>>().CreateDbContext();
 
     //private static readonly string masterUserName = "Admin";
-    //private static readonly string masterUserEmail = "admin@dsrnetscool.com";
-    //private static readonly string masterUserPassword = "Pass123#";
+    //private static readonly string masterUserEmail = "admin@rentscooter.com";
+    //private static readonly string masterUserPassword = "123";
 
     //private static void ConfigureAdministrator(IServiceScope scope)
     //{
@@ -62,53 +62,59 @@ public static class DbSeeder
 
     private static async Task ConfigureDemoData(IServiceProvider serviceProvider)
     {
-        await AddBooks(serviceProvider);
+        await AddScooters(serviceProvider);
     }
 
-    private static async Task AddBooks(IServiceProvider serviceProvider)
+    private static async Task AddScooters(IServiceProvider serviceProvider)
     {
         await using var context = DbContext(serviceProvider);
 
-        if (context.Rentals.Any() || context.Scooters.Any())
+        if (context.Scooters.Any() || context.Brands.Any() || context.Rents.Any())
             return;
 
-        var s1 = new Entities.Scooter()
+        var b1 = new Entities.Brand()
         {
-            Name = "Scooter MAXPRO2",
-            IsInUse = false,
-            PricePerMinute = 10
+            Name = "Segway",
+            Detail = new Entities.BrandDetail()
+            {
+                Country = "China",
+                StockTicket = "",
+            }
         };
-        context.Scooters.Add(s1);
+        context.Brands.Add(b1);
 
-        var s2 = new Entities.Scooter()
+        var b2 = new Entities.Brand()
         {
-            Name = "Scooter Mini3",
-            IsInUse = false,
-            PricePerMinute = 5
+            Name = "Razor",
+            Detail = new Entities.BrandDetail()
+            {
+                Country = "USA",
+                StockTicket = "",
+            }
         };
-        context.Scooters.Add(s2);
+        context.Brands.Add(b2);
 
-        //var c1 = new Entities.Category()
-        //{
-        //    Title = "Classic"
-        //};
-        //context.Categories.Add(c1);
+        var r1 = new Entities.Rent()
+        {
+            Title = "Classic"
+        };
+        context.Rents.Add(r1);
 
-        //context.Rentals.Add(new Entities.Rental()
-        //{
-        //    Title = "Tom Soyer",
-        //    Description = "description description description description ",
-        //    Author = a1,
-        //    Categories = new List<Entities.Category>() { c1 },
-        //});
+        context.Scooters.Add(new Entities.Scooter()
+        {
+            Title = "Ninebot Kickscooter Max",
+            Description = "The best electric scooter for those who want to go far",
+            Brand = b1,
+            Rents = new List<Entities.Rent>() { r1 },
+        });
 
-        //context.Books.Add(new Entities.Book()
-        //{
-        //    Title = "War and peace",
-        //    Description = "description description description description ",
-        //    Author = s2,
-        //    Categories = new List<Entities.Category>() { c1 },
-        //});
+        context.Scooters.Add(new Entities.Scooter()
+        {
+            Title = "E100",
+            Description = "Best electric scooter for kids",
+            Brand = b2,
+            Rents = new List<Entities.Rent>() { r1 },
+        });
 
         context.SaveChanges();
     }

@@ -7,7 +7,7 @@
 @inject IScooterService scooterService
 @inject NavigationManager navigationManager
 
-<MudText Typo="Typo.h4" Class="ma-8">Books</MudText>
+<MudText Typo="Typo.h4" Class="ma-8">Scooters</MudText>
 
 <MudTable Items="@ScooterListItems" Class="ma-8" Dense="@dense" Hover="@hover" Bordered="@bordered" Striped="@striped" Filter="new Func<ScooterListItem,bool>(FilterFuncSimple)">
     <ColGroup>
@@ -20,23 +20,23 @@
     <ToolBarContent>
         <MudButton StartIcon="@Icons.Material.Filled.Add" Variant="Variant.Filled" Color="Color.Primary" OnClick="@((e) => AddScooter())">Add</MudButton>
         <MudSpacer />
-        //<MudTextField @bind-Value="searchString" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium"></MudTextField>
+        <MudTextField @bind-Value="searchString" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium"></MudTextField>
     </ToolBarContent>
     <HeaderContent>
         <MudTh>Id</MudTh>
         <MudTh>Title</MudTh>
-        <MudTh>Author</MudTh>
+        <MudTh>Brand</MudTh>
         <MudTh>Description</MudTh>
         <MudTh></MudTh>
     </HeaderContent>
     <RowTemplate>
         <MudTd DataLabel="Id">@context.Id</MudTd>
         <MudTd DataLabel="Title">@context.Title</MudTd>
-        <MudTd DataLabel="Author">@context.Author</MudTd>
+        <MudTd DataLabel="Brand">@context.Brand</MudTd>
         <MudTd DataLabel="Description">@context.Description</MudTd>
         <MudTd>
-            <MudIconButton Icon="@Icons.Material.Filled.Edit" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" OnClick="@((e) => EditBook(context.Id))" />
-            <MudIconButton Icon="@Icons.Material.Filled.Delete" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" OnClick="@((e) => DeleteBook(context.Id))" />
+            <MudIconButton Icon="@Icons.Material.Filled.Edit" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" OnClick="@((e) => EditScooter(context.Id))" />
+            <MudIconButton Icon="@Icons.Material.Filled.Delete" Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Small" OnClick="@((e) => DeleteScooter(context.Id))" />
         </MudTd>
     </RowTemplate>
     <PagerContent>
@@ -81,7 +81,7 @@
             ||
             ScooterListItem.Title.Contains(searchString, StringComparison.OrdinalIgnoreCase)
             ||
-            ScooterListItem.Author.Contains(searchString, StringComparison.OrdinalIgnoreCase)
+            ScooterListItem.Brand.Contains(searchString, StringComparison.OrdinalIgnoreCase)
             ||
             ScooterListItem.Description.Contains(searchString)
         ;
@@ -92,7 +92,7 @@
         var parameters = new DialogParameters { };
         var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Large, FullWidth = true };
 
-        var dialog = DialogService.Show<ScooterDialog>("Add Scooter", parameters, options);
+        var dialog = DialogService.Show<ScooterDialog>("Add scooter", parameters, options);
         var result = await dialog.Result;
 
         if (!result.Cancelled)
@@ -108,7 +108,7 @@
         parameters.Add("ScooterId", scooterId);
 
         var options = new DialogOptions { CloseButton = true, MaxWidth = MaxWidth.Large, FullWidth = true };
-        var dialog = DialogService.Show<BookDialog>("Edit scooter", parameters, options);
+        var dialog = DialogService.Show<ScooterDialog>("Edit scooter", parameters, options);
         var result = await dialog.Result;
 
         if (!result.Cancelled)

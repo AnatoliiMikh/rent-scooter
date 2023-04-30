@@ -7,8 +7,8 @@ public interface IScooterService
     Task<IEnumerable<ScooterListItem>> GetScooters(int offset = 0, int limit = 10);
     Task<ScooterListItem> GetScooter(int scooterId);
     Task AddScooter(ScooterModel model);
-    Task EditScooter(int bookId, ScooterModel model);
-    Task DeleteScooter(int bookId);
+    Task EditScooter(int scooterId, ScooterModel model);
+    Task DeleteScooter(int scooterId);
 
-    //Task<IEnumerable<AuthorModel>> GetAuthorList();
+    Task<IEnumerable<BrandModel>> GetBrandList();
 }

@@ -18,17 +18,17 @@ using Microsoft.AspNetCore.Mvc;
 /// <response code="404">Not Found</response>
 [ProducesResponseType(typeof(ErrorResponse), 400)]
 [Produces("application/json")]
-[Route("api/v{version:apiVersion}/books")]
+[Route("api/v{version:apiVersion}/scooters")]
 [Authorize]
 [ApiController]
 [ApiVersion("1.0")]
-public class ScooterController : ControllerBase
+public class ScootersController : ControllerBase
 {
     private readonly IMapper mapper;
-    private readonly ILogger<ScooterController> logger;
+    private readonly ILogger<ScootersController> logger;
     private readonly IScooterService scooterService;
 
-    public ScooterController(IMapper mapper, ILogger<ScooterController> logger, IScooterService scooterService)
+    public ScootersController(IMapper mapper, ILogger<ScootersController> logger, IScooterService scooterService)
     {
         this.mapper = mapper;
         this.logger = logger;
@@ -68,6 +68,9 @@ public class ScooterController : ControllerBase
         return response;
     }
 
+    /// <summary>
+    /// Add scooters
+    /// </summary>
     [HttpPost("")]
     [Authorize(Policy = AppScopes.ScootersWrite)]
     public async Task<ScooterResponse> AddScooter([FromBody] AddScooterRequest request)
@@ -79,6 +82,9 @@ public class ScooterController : ControllerBase
         return response;
     }
 
+    /// <summary>
+    /// Update scooters by Id
+    /// </summary>
     [HttpPut("{id}")]
     [Authorize(Policy = AppScopes.ScootersWrite)]
     public async Task<IActionResult> UpdateScooter([FromRoute] int id, [FromBody] UpdateScooterRequest request)
@@ -89,6 +95,9 @@ public class ScooterController : ControllerBase
         return Ok();
     }
 
+    /// <summary>
+    /// Delete scooters by Id
+    /// </summary>
     [HttpDelete("{id}")]
     [Authorize(Policy = AppScopes.ScootersWrite)]
     public async Task<IActionResult> DeleteScooter([FromRoute] int id)

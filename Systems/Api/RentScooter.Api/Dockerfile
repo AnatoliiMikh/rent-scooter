@@ -16,6 +16,7 @@ COPY ["Services/RentScooter.Services.Actions/RentScooter.Services.Actions.csproj
 COPY ["Shared/RentScooter.Consts/RentScooter.Consts.csproj", "Shared/RentScooter.Consts/"]
 COPY ["Services/RentScooter.Services.EmailSender/RentScooter.Services.EmailSender.csproj", "Services/RentScooter.Services.EmailSender/"]
 COPY ["Services/RentScooter.Services.RabbitMq/RentScooter.Services.RabbitMq.csproj", "Services/RentScooter.Services.RabbitMq/"]
+COPY ["Services/RentScooter.Services.Brands/RentScooter.Services.Brands.csproj", "Services/RentScooter.Services.Brands/"]
 COPY ["Services/RentScooter.Services.Cache/RentScooter.Services.Cache.csproj", "Services/RentScooter.Services.Cache/"]
 COPY ["Shared/RentScooter.Common/RentScooter.Common.csproj", "Shared/RentScooter.Common/"]
 COPY ["Services/RentScooter.Services.Scooters/RentScooter.Services.Scooters.csproj", "Services/RentScooter.Services.Scooters/"]

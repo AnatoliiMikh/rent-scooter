@@ -1,4 +1,4 @@
-﻿namespace DSRNetSchool.Services.EmailSender;
+﻿namespace RentScooter.Services.EmailSender;
 
 using Microsoft.Extensions.DependencyInjection;
 

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
@@ -18,10 +18,10 @@
   <ItemGroup>
     <Folder Include="Components\" />
     <Folder Include="Services\" />
-    <Folder Include="Providers\" />
-    <Folder Include="Pages\Books\Models\" />
-    <Folder Include="Pages\Books\Services\" />
-	<Folder Include="Pages\Shared\" />
+	<Folder Include="Providers\" />
+    <Folder Include="Pages\Scooters\Models\" />
+    <Folder Include="Pages\Scooters\Services\" />
+    <Folder Include="Pages\Shared\" />
   </ItemGroup>
 
 </Project>
