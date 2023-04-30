@@ -95,22 +95,6 @@ public class ScooterService : IScooterService
         return mapper.Map<ScooterModel>(scooter);
     }
 
-    public async Task UpdateScooter(int scooterId, UpdateScooterModel model)
-    {
-        updateScooterModelValidator.Check(model);
-
-        using var context = await contextFactory.CreateDbContextAsync();
-
-        var scooter = await context.Scooters.FirstOrDefaultAsync(x => x.Id.Equals(scooterId));
-
-        ProcessException.ThrowIf(() => scooter is null, $"The scooter (id: {scooterId}) was not found");
-
-        scooter = mapper.Map(model, scooter);
-
-        context.Scooters.Update(scooter);
-        context.SaveChanges();
-    }
-    //Пробую создать новый таск UpdateScooter:
     //public async Task UpdateScooter(int scooterId, UpdateScooterModel model)
     //{
     //    updateScooterModelValidator.Check(model);
@@ -121,13 +105,29 @@ public class ScooterService : IScooterService
 
     //    ProcessException.ThrowIf(() => scooter is null, $"The scooter (id: {scooterId}) was not found");
 
-
-
     //    scooter = mapper.Map(model, scooter);
 
     //    context.Scooters.Update(scooter);
     //    context.SaveChanges();
     //}
+    //Пробую создать новый таск UpdateScooter:
+    public async Task UpdateScooter(int scooterId, UpdateScooterModel model)
+    {
+        updateScooterModelValidator.Check(model);
+
+        using var context = await contextFactory.CreateDbContextAsync();
+
+        var scooter = await context.Scooters.FirstOrDefaultAsync(x => x.Id.Equals(scooterId));
+
+        ProcessException.ThrowIf(() => scooter is null, $"The scooter (id: {scooterId}) was not found");
+
+
+
+        scooter = mapper.Map(model, scooter);
+
+        context.Scooters.Update(scooter);
+        context.SaveChanges();
+    }
 
 
 
