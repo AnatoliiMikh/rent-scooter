@@ -10,7 +10,6 @@ public class RentModel
     public decimal TotalRevenue { get; set; } = decimal.Zero;
     public DateTime RentTime { get; set; } = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified);
     public DateTime ReturnTime { get; set; } = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified);   
-    public virtual ICollection<Scooter> Scooters { get; set; }
 }
 
 public class RentModelProfile : Profile
