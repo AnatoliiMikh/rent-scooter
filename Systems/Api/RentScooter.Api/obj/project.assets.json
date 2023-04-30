@@ -2462,7 +2462,9 @@
           "RentScooter.Common": "1.0.0",
           "RentScooter.Context": "1.0.0",
           "RentScooter.Context.Entities": "1.0.0",
-          "RentScooter.Services.Cache": "1.0.0"
+          "RentScooter.Services.Actions": "1.0.0",
+          "RentScooter.Services.Cache": "1.0.0",
+          "RentScooter.Services.UserAccount": "1.0.0"
         },
         "compile": {
           "bin/placeholder/RentScooter.Services.Scooters.dll": {}

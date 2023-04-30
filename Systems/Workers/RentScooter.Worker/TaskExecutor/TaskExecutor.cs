@@ -52,4 +52,26 @@ public class TaskExecutor : ITaskExecutor
                 await service.Send(data);
             }));
     }
+
+    public void StartRent()
+    {
+                rabbitMq.Subscribe<EmailModel>(RabbitMqTaskQueueNames.SCOOTER_RENTED, async data
+            => await Execute<IEmailSender>(async service =>
+            {
+                logger.LogDebug($"RABBITMQ::: {RabbitMqTaskQueueNames.SCOOTER_RENTED}: {data.Email} {data.Message}");
+                await service.Send(data);
+            }));
+
+    }
+
+    public void StopRent() 
+    {
+                rabbitMq.Subscribe<EmailModel>(RabbitMqTaskQueueNames.SCOOTER_RETURNED, async data
+            => await Execute<IEmailSender>(async service =>
+            {
+                logger.LogDebug($"RABBITMQ::: {RabbitMqTaskQueueNames.SCOOTER_RETURNED}: {data.Email} {data.Message}");
+                await service.Send(data);
+            }));
+
+    }
 }

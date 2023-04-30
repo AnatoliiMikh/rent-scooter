@@ -25,7 +25,10 @@ public class AddScooterModelValidator : AbstractValidator<AddScooterModel>
         //    .NotEmpty().WithMessage("Name is required.");
 
         //RuleFor(x => x.IsInUse)
-            //.NotEmpty().WithMessage("Status is required.");
+        //.NotEmpty().WithMessage("Status is required.");
+
+        RuleFor(x => x.IsInUse)
+            .Empty().WithMessage("Status must be false.");
 
         RuleFor(x => x.PricePerMinute)
             .NotEmpty().WithMessage("Price is required.");

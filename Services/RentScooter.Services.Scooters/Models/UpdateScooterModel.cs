@@ -24,13 +24,16 @@ public class UpdateScooterModelValidator : AbstractValidator<UpdateScooterModel>
         //    .NotEmpty().WithMessage("Name is required.");
 
         //RuleFor(x => x.IsInUse)
-            //.NotEmpty().WithMessage("Status is required.");
+        //.NotEmpty().WithMessage("Status is required.");
+
+        //RuleFor(x => x.IsInUse)
+            //.Empty().WithMessage("Status must be false.");
 
         RuleFor(x => x.PricePerMinute)
             .NotEmpty().WithMessage("Price is required.");
 
         RuleFor(x => x.BrandId)
-    .NotEmpty().WithMessage("Brand is required.");
+            .NotEmpty().WithMessage("Brand is required.");
 
         RuleFor(x => x.Title)
             .NotEmpty().WithMessage("Title is required.")

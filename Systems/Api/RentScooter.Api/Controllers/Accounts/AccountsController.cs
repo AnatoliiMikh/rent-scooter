@@ -21,6 +21,9 @@ public class AccountsController : ControllerBase
         this.userAccountService = userAccountService;
     }
 
+    /// <summary>
+    /// Create User
+    /// </summary>
     [HttpPost("")]
     public async Task<UserAccountResponse> Register([FromQuery] RegisterUserAccountRequest request)
     {

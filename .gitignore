@@ -414,5 +414,6 @@ testem.log
 .DS_Store
 Thumbs.db
 
-/PracticeProjectBase
-/PracticeProject/rabbitmq
+/rent-scooter/rabbitmq
+
+/.git/config 
