@@ -45,6 +45,7 @@
     <ProjectReference Include="..\..\..\Services\RentScooter.Services.Brands\RentScooter.Services.Brands.csproj" />
     <ProjectReference Include="..\..\..\Services\RentScooter.Services.Cache\RentScooter.Services.Cache.csproj" />
     <ProjectReference Include="..\..\..\Services\RentScooter.Services.RabbitMq\RentScooter.Services.RabbitMq.csproj" />
+    <ProjectReference Include="..\..\..\Services\RentScooter.Services.Rents\RentScooter.Services.Rents.csproj" />
     <ProjectReference Include="..\..\..\Services\RentScooter.Services.Scooters\RentScooter.Services.Scooters.csproj" />
     <ProjectReference Include="..\..\..\Services\RentScooter.Services.Settings\RentScooter.Services.Settings.csproj" />
     <ProjectReference Include="..\..\..\Services\RentScooter.Services.UserAccount\RentScooter.Services.UserAccount.csproj" />

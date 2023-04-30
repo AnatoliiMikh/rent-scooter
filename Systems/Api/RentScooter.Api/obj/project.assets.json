@@ -2431,6 +2431,26 @@
           "bin/placeholder/RentScooter.Services.RabbitMq.dll": {}
         }
       },
+      "RentScooter.Services.Rents/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "FluentValidation": "11.5.2",
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0",
+          "RentScooter.Common": "1.0.0",
+          "RentScooter.Context": "1.0.0",
+          "RentScooter.Context.Entities": "1.0.0",
+          "RentScooter.Services.Cache": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RentScooter.Services.Rents.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RentScooter.Services.Rents.dll": {}
+        }
+      },
       "RentScooter.Services.Scooters/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -6456,6 +6476,11 @@
       "path": "../../../Services/RentScooter.Services.RabbitMq/RentScooter.Services.RabbitMq.csproj",
       "msbuildProject": "../../../Services/RentScooter.Services.RabbitMq/RentScooter.Services.RabbitMq.csproj"
     },
+    "RentScooter.Services.Rents/1.0.0": {
+      "type": "project",
+      "path": "../../../Services/RentScooter.Services.Rents/RentScooter.Services.Rents.csproj",
+      "msbuildProject": "../../../Services/RentScooter.Services.Rents/RentScooter.Services.Rents.csproj"
+    },
     "RentScooter.Services.Scooters/1.0.0": {
       "type": "project",
       "path": "../../../Services/RentScooter.Services.Scooters/RentScooter.Services.Scooters.csproj",
@@ -6494,6 +6519,7 @@
       "RentScooter.Services.Brands >= 1.0.0",
       "RentScooter.Services.Cache >= 1.0.0",
       "RentScooter.Services.RabbitMq >= 1.0.0",
+      "RentScooter.Services.Rents >= 1.0.0",
       "RentScooter.Services.Scooters >= 1.0.0",
       "RentScooter.Services.Settings >= 1.0.0",
       "RentScooter.Services.UserAccount >= 1.0.0",
@@ -6561,6 +6587,9 @@
             },
             "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.RabbitMq\\RentScooter.Services.RabbitMq.csproj": {
               "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.RabbitMq\\RentScooter.Services.RabbitMq.csproj"
+            },
+            "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Rents\\RentScooter.Services.Rents.csproj": {
+              "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Rents\\RentScooter.Services.Rents.csproj"
             },
             "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Scooters\\RentScooter.Services.Scooters.csproj": {
               "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Scooters\\RentScooter.Services.Scooters.csproj"

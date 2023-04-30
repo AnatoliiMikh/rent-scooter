@@ -9,6 +9,7 @@ using RentScooter.Services.RabbitMq;
 using RentScooter.Services.Settings;
 using RentScooter.Services.UserAccount;
 using Microsoft.Extensions.DependencyInjection;
+using RentScooter.Services.Rents;
 
 public static class Bootstrapper
 {
@@ -25,6 +26,7 @@ public static class Bootstrapper
             .AddRabbitMq()
             .AddActions()
             .AddBrandService()
+            .AddRentService()
             ;
 
         return services;
