@@ -19,7 +19,12 @@ public class ScooterResponse
 
     //public string Name { get; set; } = string.Empty;
     //public bool IsInUse { get; set; } = false;
-    //public decimal PricePerMinute { get; set; } = Decimal.Zero;
+
+    /// <summary>
+    /// Scooter price per minute
+    /// </summary>
+    public decimal PricePerMinute { get; set; } = Decimal.Zero;
+    public bool IsInUse { get; set; } = false;
 }
 
 public class ScooterResponseProfile : Profile

@@ -94,6 +94,11 @@
             Scooter title
             </summary>
         </member>
+        <member name="P:RentScooter.API.Controllers.Models.ScooterResponse.PricePerMinute">
+            <summary>
+            Scooter price per minute
+            </summary>
+        </member>
         <member name="M:RentScooter.API.Controllers.Brands.BrandsController.GetBrands">
             <summary>
             Get brands
@@ -121,6 +126,21 @@
             Get scooters by Id
             </summary>
             <response code="200">ScooterResponse></response>
+        </member>
+        <member name="M:RentScooter.API.Controllers.ScooterController.AddScooter(RentScooter.API.Controllers.Models.AddScooterRequest)">
+            <summary>
+            Add scooters
+            </summary>
+        </member>
+        <member name="M:RentScooter.API.Controllers.ScooterController.UpdateScooter(System.Int32,RentScooter.API.Controllers.Models.UpdateScooterRequest)">
+            <summary>
+            Update scooters by Id
+            </summary>
+        </member>
+        <member name="M:RentScooter.API.Controllers.ScooterController.DeleteScooter(System.Int32)">
+            <summary>
+            Delete scooters by Id
+            </summary>
         </member>
     </members>
 </doc>

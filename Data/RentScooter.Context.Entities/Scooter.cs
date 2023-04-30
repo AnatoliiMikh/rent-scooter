@@ -31,5 +31,8 @@ public class Scooter : BaseEntity
     public string Title { get; set; } //Title to Name
     public string Description { get; set; }
 
+    public decimal PricePerMinute { get; set; }
+    public bool IsInUse { get; set; }
+
     public virtual ICollection<Rent> Rents { get; set; } //Categories to Rents
 }

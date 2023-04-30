@@ -68,6 +68,9 @@ public class ScooterController : ControllerBase
         return response;
     }
 
+    /// <summary>
+    /// Add scooters
+    /// </summary>
     [HttpPost("")]
     [Authorize(Policy = AppScopes.ScootersWrite)]
     public async Task<ScooterResponse> AddScooter([FromBody] AddScooterRequest request)
@@ -79,6 +82,9 @@ public class ScooterController : ControllerBase
         return response;
     }
 
+    /// <summary>
+    /// Update scooters by Id
+    /// </summary>
     [HttpPut("{id}")]
     [Authorize(Policy = AppScopes.ScootersWrite)]
     public async Task<IActionResult> UpdateScooter([FromRoute] int id, [FromBody] UpdateScooterRequest request)
@@ -89,6 +95,9 @@ public class ScooterController : ControllerBase
         return Ok();
     }
 
+    /// <summary>
+    /// Delete scooters by Id
+    /// </summary>
     [HttpDelete("{id}")]
     [Authorize(Policy = AppScopes.ScootersWrite)]
     public async Task<IActionResult> DeleteScooter([FromRoute] int id)

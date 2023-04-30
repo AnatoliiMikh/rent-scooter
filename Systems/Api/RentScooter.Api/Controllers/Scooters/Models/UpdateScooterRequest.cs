@@ -8,7 +8,8 @@ public class UpdateScooterRequest
 {
     //public string Name { get; set; } = string.Empty;
     //public bool IsInUse { get; set; } = false;
-    //public decimal PricePerMinute { get; set; } = Decimal.Zero;
+    public decimal PricePerMinute { get; set; } = Decimal.Zero;
+    public bool IsInUse { get; set; } = false;
 
     public int BrandId { get; set; }
     public string Title { get; set; } = string.Empty;
@@ -25,8 +26,8 @@ public class UpdateScooterRequestValidator : AbstractValidator<UpdateScooterRequ
         //RuleFor(x => x.IsInUse)
         //    .NotEmpty().WithMessage("Status is required.");
 
-        //RuleFor(x => x.PricePerMinute)
-        //    .NotEmpty().WithMessage("Price is required.");
+        RuleFor(x => x.PricePerMinute)
+            .NotEmpty().WithMessage("Price is required.");
 
         RuleFor(x => x.Title)
             .NotEmpty().WithMessage("Title is required.")
