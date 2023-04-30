@@ -13,7 +13,6 @@
 	
   <ItemGroup>
     <Folder Include="Configuration\" />
-    <Folder Include="Controllers\Scooters\" />
     <Folder Include="wwwroot\" />
     <Folder Include="Pages\" />
   </ItemGroup>

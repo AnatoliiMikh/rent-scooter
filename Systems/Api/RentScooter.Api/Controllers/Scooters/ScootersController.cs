@@ -22,13 +22,13 @@ using Microsoft.AspNetCore.Mvc;
 [Authorize]
 [ApiController]
 [ApiVersion("1.0")]
-public class ScooterController : ControllerBase
+public class ScootersController : ControllerBase
 {
     private readonly IMapper mapper;
-    private readonly ILogger<ScooterController> logger;
+    private readonly ILogger<ScootersController> logger;
     private readonly IScooterService scooterService;
 
-    public ScooterController(IMapper mapper, ILogger<ScooterController> logger, IScooterService scooterService)
+    public ScootersController(IMapper mapper, ILogger<ScootersController> logger, IScooterService scooterService)
     {
         this.mapper = mapper;
         this.logger = logger;

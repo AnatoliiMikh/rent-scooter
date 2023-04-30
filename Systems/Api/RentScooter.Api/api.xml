@@ -109,7 +109,7 @@
             Get brands
             </summary>
         </member>
-        <member name="T:RentScooter.API.Controllers.ScooterController">
+        <member name="T:RentScooter.API.Controllers.ScootersController">
             <summary>
             Scooters controller
             </summary>
@@ -118,7 +118,7 @@
             <response code="403">Forbidden</response>
             <response code="404">Not Found</response>
         </member>
-        <member name="M:RentScooter.API.Controllers.ScooterController.GetScooters(System.Int32,System.Int32)">
+        <member name="M:RentScooter.API.Controllers.ScootersController.GetScooters(System.Int32,System.Int32)">
             <summary>
             Get scooters
             </summary>
@@ -126,23 +126,23 @@
             <param name="limit">Count elements on the page</param>
             <response code="200">List of ScooterResponses</response>
         </member>
-        <member name="M:RentScooter.API.Controllers.ScooterController.GetScooterById(System.Int32)">
+        <member name="M:RentScooter.API.Controllers.ScootersController.GetScooterById(System.Int32)">
             <summary>
             Get scooters by Id
             </summary>
             <response code="200">ScooterResponse></response>
         </member>
-        <member name="M:RentScooter.API.Controllers.ScooterController.AddScooter(RentScooter.API.Controllers.Models.AddScooterRequest)">
+        <member name="M:RentScooter.API.Controllers.ScootersController.AddScooter(RentScooter.API.Controllers.Models.AddScooterRequest)">
             <summary>
             Add scooters
             </summary>
         </member>
-        <member name="M:RentScooter.API.Controllers.ScooterController.UpdateScooter(System.Int32,RentScooter.API.Controllers.Models.UpdateScooterRequest)">
+        <member name="M:RentScooter.API.Controllers.ScootersController.UpdateScooter(System.Int32,RentScooter.API.Controllers.Models.UpdateScooterRequest)">
             <summary>
             Update scooters by Id
             </summary>
         </member>
-        <member name="M:RentScooter.API.Controllers.ScooterController.DeleteScooter(System.Int32)">
+        <member name="M:RentScooter.API.Controllers.ScootersController.DeleteScooter(System.Int32)">
             <summary>
             Delete scooters by Id
             </summary>
