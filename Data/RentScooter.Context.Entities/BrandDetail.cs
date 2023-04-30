@@ -8,6 +8,6 @@ public class BrandDetail
     public int Id { get; set; }
     public virtual Brand Brand { get; set; }
 
-    public string StockTicket { get; set; } //Family to StickTicket
+    public string StockTicket { get; set; } 
     public string Country { get; set; }
 }
