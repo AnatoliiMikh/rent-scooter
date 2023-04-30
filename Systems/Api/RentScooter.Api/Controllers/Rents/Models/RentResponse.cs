@@ -1,4 +1,5 @@
-﻿namespace RentScooter.Api.Controllers.Rents.Models;
+﻿//namespace RentScooter.Api.Controllers.Rents.Models;
+namespace RentScooter.API.Controllers.Models;
 
 using AutoMapper;
 using RentScooter.Services.Rents;

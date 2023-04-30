@@ -72,6 +72,11 @@
             </summary>
             <param name="services">Services collection</param>
         </member>
+        <member name="M:RentScooter.Api.Controllers.RentsController.GetRents">
+            <summary>
+            Get rents
+            </summary>
+        </member>
         <member name="M:RentScooter.Api.Controllers.TestController.GetData1">
             <summary>
             Get data 1
