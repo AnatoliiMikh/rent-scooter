@@ -24,6 +24,9 @@ public class ScooterResponse
     /// Scooter price per minute
     /// </summary>
     public decimal PricePerMinute { get; set; } = Decimal.Zero;
+    /// <summary>
+    /// Take scooter and return scooter
+    /// </summary>
     public bool IsInUse { get; set; } = false;
 }
 

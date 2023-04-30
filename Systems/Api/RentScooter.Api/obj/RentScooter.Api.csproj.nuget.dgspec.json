@@ -812,8 +812,14 @@
               "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context\\RentScooter.Context.csproj": {
                 "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Data\\RentScooter.Context\\RentScooter.Context.csproj"
               },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Actions\\RentScooter.Services.Actions.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Actions\\RentScooter.Services.Actions.csproj"
+              },
               "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Cache\\RentScooter.Services.Cache.csproj": {
                 "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.Cache\\RentScooter.Services.Cache.csproj"
+              },
+              "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.UserAccount\\RentScooter.Services.UserAccount.csproj": {
+                "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Services\\RentScooter.Services.UserAccount\\RentScooter.Services.UserAccount.csproj"
               },
               "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Common\\RentScooter.Common.csproj": {
                 "projectPath": "F:\\DSR\\DSRmycourse\\rent-scooter\\Shared\\RentScooter.Common\\RentScooter.Common.csproj"

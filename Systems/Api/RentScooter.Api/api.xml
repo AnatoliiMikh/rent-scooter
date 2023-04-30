@@ -89,6 +89,11 @@
             </summary>
             <response code="200">String items</response>
         </member>
+        <member name="M:RentScooter.API.Controllers.AccountsController.Register(RentScooter.API.Controllers.Models.RegisterUserAccountRequest)">
+            <summary>
+            Create User
+            </summary>
+        </member>
         <member name="P:RentScooter.API.Controllers.Models.ScooterResponse.Id">
             <summary>
             Scooter Id
@@ -102,6 +107,11 @@
         <member name="P:RentScooter.API.Controllers.Models.ScooterResponse.PricePerMinute">
             <summary>
             Scooter price per minute
+            </summary>
+        </member>
+        <member name="P:RentScooter.API.Controllers.Models.ScooterResponse.IsInUse">
+            <summary>
+            Take scooter and return scooter
             </summary>
         </member>
         <member name="M:RentScooter.API.Controllers.Brands.BrandsController.GetBrands">

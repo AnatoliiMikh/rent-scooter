@@ -7,6 +7,9 @@ using RentScooter.Context;
 using RentScooter.Context.Entities;
 using RentScooter.Services.Cache;
 using Microsoft.EntityFrameworkCore;
+//using RentScooter.Services.Actions;
+//using RentScooter.Services.EmailSender;
+//using RentScooter.Services.UserAccount;
 
 public class ScooterService : IScooterService
 {
@@ -14,13 +17,16 @@ public class ScooterService : IScooterService
 
     private readonly IDbContextFactory<MainDbContext> contextFactory;
     private readonly IMapper mapper;
+   //private readonly IAction action;
     private readonly ICacheService cacheService;
     private readonly IModelValidator<AddScooterModel> addScooterModelValidator;
     private readonly IModelValidator<UpdateScooterModel> updateScooterModelValidator;
+    //private readonly IModelValidator<RegisterUserAccountModelValidator> registerUserAccountModelValidator;
 
     public ScooterService(
         IDbContextFactory<MainDbContext> contextFactory,
         IMapper mapper,
+        //IAction action,
         ICacheService cacheService,
         IModelValidator<AddScooterModel> addScooterModelValidator,
         IModelValidator<UpdateScooterModel> updateScooterModelValidator
@@ -28,6 +34,7 @@ public class ScooterService : IScooterService
     {
         this.contextFactory = contextFactory;
         this.mapper = mapper;
+        //this.action = action;
         this.cacheService = cacheService;
         this.addScooterModelValidator = addScooterModelValidator;
         this.updateScooterModelValidator = updateScooterModelValidator;
@@ -121,7 +128,16 @@ public class ScooterService : IScooterService
 
         ProcessException.ThrowIf(() => scooter is null, $"The scooter (id: {scooterId}) was not found");
 
-
+        //if (scooter.IsInUse)
+        //{
+        //    await action.SendStartRentEmail(new EmailModel
+        //    {
+        //        //Email = model.Email,
+        //        Email = UserAccountModel.Email,
+        //        Subject = "RentScooter notification",
+        //        Message = "Scooter rented"
+        //    });
+        //}
 
         scooter = mapper.Map(model, scooter);
 

@@ -18,4 +18,15 @@ public class Action : IAction
     {
         await rabbitMq.PushAsync(RabbitMqTaskQueueNames.SEND_EMAIL, email);
     }
+
+    public async Task SendStartRentEmail(EmailModel email)
+    {
+        await rabbitMq.PushAsync(RabbitMqTaskQueueNames.SCOOTER_RENTED, email);
+    }
+
+    public async Task SendStopRentEmail(EmailModel email)
+    {
+        await rabbitMq.PushAsync(RabbitMqTaskQueueNames.SCOOTER_RETURNED, email);
+    }
+
 }

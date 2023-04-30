@@ -6,7 +6,6 @@ using RentScooter.Common.Validator;
 using RentScooter.Context.Entities;
 using RentScooter.Services.Actions; 
 using RentScooter.Services.EmailSender; 
-using RentScooter.Services.UserAccount; //??????
 using Microsoft.AspNetCore.Identity;
 
 public class UserAccountService : IUserAccountService
@@ -32,22 +31,19 @@ public class UserAccountService : IUserAccountService
     {
         registerUserAccountModelValidator.Check(model);
 
-        // Find user by email
         var user = await userManager.FindByEmailAsync(model.Email);
         if (user != null)
             throw new ProcessException($"User account with email {model.Email} already exist.");
 
-        // Create user account
         user = new User()
         {
             Status = UserStatus.Active,
             FullName = model.Name,
-            UserName = model.Email,  // Это логин. Мы будем его приравнивать к email, хотя это и не обязательно
+            UserName = model.Email, 
             Email = model.Email,
-            EmailConfirmed = true, // Так как это учебный проект, то сразу считаем, что почта подтверждена. В реальном проекте, скорее всего, надо будет ее подтвердить через ссылку в письме
+            EmailConfirmed = true, 
             PhoneNumber = null,
             PhoneNumberConfirmed = false
-            // ... Также здесь есть еще интересные свойства. Посмотрите в документации.
         };
 
         var result = await userManager.CreateAsync(user, model.Password);
@@ -61,8 +57,6 @@ public class UserAccountService : IUserAccountService
             Message = "You are registered"
         });
 
-
-        // Returning the created user
         return mapper.Map<UserAccountModel>(user);
     }
 }

@@ -17,7 +17,9 @@
     <ProjectReference Include="..\..\Data\RentScooter.Context.Entities\RentScooter.Context.Entities.csproj" />
     <ProjectReference Include="..\..\Data\RentScooter.Context\RentScooter.Context.csproj" />
     <ProjectReference Include="..\..\Shared\RentScooter.Common\RentScooter.Common.csproj" />
+    <ProjectReference Include="..\RentScooter.Services.Actions\RentScooter.Services.Actions.csproj" />
     <ProjectReference Include="..\RentScooter.Services.Cache\RentScooter.Services.Cache.csproj" />
+    <ProjectReference Include="..\RentScooter.Services.UserAccount\RentScooter.Services.UserAccount.csproj" />
   </ItemGroup>
 
 </Project>
