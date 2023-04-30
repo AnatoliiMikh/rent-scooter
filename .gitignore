@@ -415,3 +415,5 @@ testem.log
 Thumbs.db
 
 /rent-scooter/rabbitmq
+
+/.git/config 
